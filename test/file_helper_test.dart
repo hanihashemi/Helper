@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:helper/FileHelper.dart';
+import 'package:helper/file_helper.dart';
 
 void main() {
   test('getFileNameFromPath, NormalCase', () {
