@@ -14,7 +14,14 @@ void main() {
         fileHelper.getFileName('/home/hani/Downloads/123dW4rfasXmyfile.jpeg'),
         '123dW4rfasXmyfile.jpeg');
   });
-  //getFileExtension
+
+  test('getFileNameFromPath, With dot', () {
+    FileHelper fileHelper = FileHelper();
+    expect(
+        fileHelper.getFileName('/data/user/0/com.rotortrade.rotortrade/cache/sample.pdf'),
+        'sample.pdf');
+  });
+
   test('getFileExtension, normal file', () {
     FileHelper fileHelper = FileHelper();
     expect(
@@ -28,5 +35,11 @@ void main() {
     expect(
         fileHelper.getFileExtension('/home/hani/Downloads/123dW4rfasXmyfile'),
         '');
+  });
+
+  test('getFileExtension, with dot', () {
+    FileHelper fileHelper = FileHelper();
+    expect(
+        fileHelper.getFileExtension('/data/user/0/com.rotortrade.rotortrade/cache/sample.pdf'), 'pdf');
   });
 }
