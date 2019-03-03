@@ -12,8 +12,10 @@ class DateTimeHelper {
   }
 
   int toAgeTimestampMilliseconds(int birthday, [int now]) {
-    return toAge(DateTime.fromMillisecondsSinceEpoch(birthday),
-        DateTime.fromMillisecondsSinceEpoch(now));
+    DateTime dateTimeNow;
+    if (now != null) dateTimeNow = DateTime.fromMillisecondsSinceEpoch(now);
+
+    return toAge(DateTime.fromMillisecondsSinceEpoch(birthday), dateTimeNow);
   }
 
   String dateToString(int timestamp, [String format = 'dd-MM-yyyy']) {
