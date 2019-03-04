@@ -1,4 +1,3 @@
-
 class FileHelper {
   String getFileName(String path) {
     RegExp regex = RegExp(r'\/([\w-]+\.[\w]{1,})$');
@@ -7,7 +6,7 @@ class FileHelper {
     return '';
   }
 
-  String getFileExtension(String path){
+  String getFileExtension(String path) {
     RegExp regex = RegExp(r'\.([A-Za-z0-9]+)$');
     Match match = regex.firstMatch(path);
     if (match != null && match.groupCount == 1) return match.group(1);

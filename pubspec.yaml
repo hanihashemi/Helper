@@ -1,6 +1,6 @@
 name: helper
-description: A new Flutter package.
-version: 0.0.9
+description: Common helper that every project needs. CurrencyHelper, DateTimeHelper, FileHelper, DialogHelper
+version: 0.0.10
 author: HaniHashemi <jhanihashemi@gmail.com>
 homepage: https://github.com/hanihashemi/Helper
 

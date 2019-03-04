@@ -1,6 +1,6 @@
 import 'package:intl/intl.dart';
 
-class CurrencyHelper{
+class CurrencyHelper {
   String formatter(String value, [String sign = '\$']) {
     if (value == null || value == '') return '-';
     double changedVal = double.parse(value);
