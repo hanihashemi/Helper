@@ -19,7 +19,7 @@ class DateTimeHelper {
   }
 
   String dateToString(int timestamp, [String format = 'dd-MM-yyyy']) {
-    if (timestamp == null || timestamp == 0) return '-';
+    if (timestamp == null || timestamp == 0) return '';
     var dateTime = DateTime.fromMillisecondsSinceEpoch(timestamp);
     var dateFormat = DateFormat(format);
     return dateFormat.format(dateTime);

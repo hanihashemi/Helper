@@ -1,6 +1,6 @@
 name: helper
 description: Common helper that every project needs. CurrencyHelper, DateTimeHelper, FileHelper, DialogHelper
-version: 0.0.10
+version: 0.0.11
 author: HaniHashemi <jhanihashemi@gmail.com>
 homepage: https://github.com/hanihashemi/Helper
 

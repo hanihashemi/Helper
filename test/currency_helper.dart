@@ -5,8 +5,8 @@ void main() {
   test('format empty or null currency', (){
     CurrencyHelper currencyHelper = CurrencyHelper();
 
-    expect(currencyHelper.formatter(''), '-');
-    expect(currencyHelper.formatter(null), '-');
+    expect(currencyHelper.formatter(''), '');
+    expect(currencyHelper.formatter(null), '');
   });
 
   test('format currency', (){
