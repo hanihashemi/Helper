@@ -6,9 +6,10 @@ class UserAvatar extends StatelessWidget {
   final String image;
   final double size;
   final Function onTap;
+  final double radius;
 
   const UserAvatar(
-      {@required this.image, this.onTap, this.size = 80.0});
+      {@required this.image, this.onTap, this.size = 80.0, this.radius = 10.0});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class UserAvatar extends StatelessWidget {
             image: CachedNetworkImageProvider(image),
             fit: BoxFit.cover,
           ),
-          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+          borderRadius: BorderRadius.all(Radius.circular(radius)),
         ),
         child: SizedBox(),
       ),
